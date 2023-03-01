@@ -12,7 +12,7 @@ if (!$module) {
     Write-Warning "The ExchangeOnlineManagement module is not installed on this PC. `
     Attempting to install...."
     try {
-        Install-Module -Name ExchangeOnlineManagement
+        Install-Module -Name ExchangeOnlineManagement -Force
     }
     catch {
         Write-Error "ExchangeOnlineManagement Not Installed, Install Attempt Failed. ` 
